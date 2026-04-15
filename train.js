@@ -16,4 +16,4 @@ function count(letter, word) {
 let letter = "s";
 let word = "success_stories";
 let result = count(letter, word);
-console.log(`${letter} is used ${result} times in ${"success_stories"} word`);
+console.log(`${letter} is used ${result} times in ${word} word`);
