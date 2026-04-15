@@ -30,7 +30,7 @@ print("result:", result)
 result2 = greeting("Justin")
 print("result2:", result2)
 
-print("=====  Keyword & default arguments =====")
+print("===== Keyword & default arguments =====")
 
 
 # define
@@ -45,3 +45,26 @@ print("result3:", result3)
 
 result4 = give_greet(name="Daniel")
 print("result3:", result4)
+
+print("===== Scope =====")
+b = 100  # 3
+
+# define
+
+
+def calculate(a, b):  # 2
+    c = a * b  # 1
+    print(f"value of c: {c}")
+
+
+# call
+calculate(5, 10)
+
+
+def calculate(a):  # 2
+    c = a * b  # 1
+    print(f"case 2 value of c: {c}")  # global scope tashqaridagi 100 olinadi
+
+
+# call
+calculate(5)
