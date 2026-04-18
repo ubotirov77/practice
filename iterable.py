@@ -9,3 +9,20 @@ for letter in "MIT":
 
 for ele in range_obj:
     print(f"the element : {ele}")
+
+print("=====  Dictionary ======")
+# Dictionary is Json object
+person = {"name": "Norman", "age": 24, "singe": True}
+person_obj = dict(name="Norman", age=24, singe=True)
+print(f"the person:{person}")
+print(f"the person_obj: {person_obj}")
+
+# method: get()
+# name = person_obj["name"]
+name = person_obj.get("name")
+hobby = person_obj.get("hobby", "coding")
+balance = person_obj.get("balance", 0)
+print(f"the name: {name}, hobby: {hobby}, and balance: {balance}")
+del person_obj["singe"]
+for key in person_obj:
+    print(f"the key: {key} > value {person_obj.get(key)}")
