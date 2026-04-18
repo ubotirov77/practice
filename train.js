@@ -1,5 +1,4 @@
 console.log("====== MIT TASK A with node.js ========")
-
 /* ✨A-TASK:
 Shunday 2 parametrli function tuzing, 
 hamda birinchi parametrdagi letterni ikkinchi parametrdagi 
