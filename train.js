@@ -29,7 +29,7 @@ function countDigits(text) {
     return counted;
 }
 
-const result = countDigits("dhajgsd374bs28eb989bs72hdb1");
+const result = countDigits("37dhajgsd4bs28eb989bs72hdb1");
 console.log(`Bu textda ${result} ta raqam qatnashgan`)
 
 
