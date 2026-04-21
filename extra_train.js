@@ -14,7 +14,7 @@ function findAnimal(text) {
 
                         if (count === animal_list[animal].length) { //agotd
 
-                            findAnimal.unshift(animal_list[animal])
+                            findAnimal.push(animal_list[animal])
                             count = 0
                         }
                     }
@@ -22,9 +22,11 @@ function findAnimal(text) {
             }
         }
         count = 0
+        
     }
+    
     return findAnimal;
 }
-const javob = findAnimal("aglfocwtd");
+const javob = findAnimal("aglfkobcwtd");
 console.log("javob=>", javob);
 

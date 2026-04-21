@@ -1,61 +1,109 @@
-console.log("====== MIT TASK with node.js ========")
-/*
-✨B-TASK (NodeJS)
-
-Shunday function tuzing, u 1ta string parametrga ega bolsin,
-hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
-MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
-*/
+//=============================== MIT TASK with node.js ==============================================
+// /*
+//                                  ✨C-TASK (NodeJS)
+//=====================================================================================================
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string             
+// bir hil harflardan iborat bolsa true aks holda false qaytarsin MASALAN :                                     
+// checkContent("mitgroup", "gmtiprou") return qiladi true;                                             
+//=====================================================================================================
 // ✨ MASALANI YECHIMI:
-function countDigits(text) {
-    let counted = 0;
 
-    for (let i = 0; i < text.length; i++) {
-        if (text[i] === "0" ||
-            text[i] === "1" ||
-            text[i] === "2" ||
-            text[i] === "3" ||
-            text[i] === "4" ||
-            text[i] === "5" ||
-            text[i] === "6" ||
-            text[i] === "7" ||
-            text[i] === "8" ||
-            text[i] === "9") {
+function checkContent(matn1, matn2) {
 
-            counted = counted + 1;
-        }
+    if (matn1.length !== matn2.length) {
+        return false;
     }
 
-    return counted;
+    let result = true;
+
+    for (let i = 0; i < matn1.length; i++) {
+        result = result && matn2.includes(matn1[i]);
+    }
+
+    return result;
 }
 
-const result = countDigits("37dhajgsd4bs28eb989bs72hdb1");
-console.log(`Bu textda ${result} ta raqam qatnashgan`)
+let result = checkContent("realmadrid", "dirdmalaer");
+console.log("result:", result);
 
 
 
-// /* ✨A-TASK:
-// Shunday 2 parametrli function tuzing, 
-// hamda birinchi parametrdagi letterni ikkinchi parametrdagi 
-// so'zdan qatnashga sonini return qilishi kerak boladi.
-// MASALAN countLetter("e", "engineer") 3ni return qiladi.
+
+
+
+// ✨B-TASK (NodeJS)
+
+// Shunday function tuzing, u 1ta string parametrga ega bolsin,
+// hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+// MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 // */
-
 // // ✨ MASALANI YECHIMI:
-// let letters = 0;
-// let countedLetter = 0;
+// function countDigits(text) {
+//     let counted = 0;
 
-// function count(letter, word) {
-//     while (letters < word.length) {
-//         if (word[letters] === letter) {
-//             countedLetter = countedLetter + 1
+//     for (let i = 0; i < text.length; i++) {
+//         if (text[i] === "0" ||
+//             text[i] === "1" ||
+//             text[i] === "2" ||
+//             text[i] === "3" ||
+//             text[i] === "4" ||
+//             text[i] === "5" ||
+//             text[i] === "6" ||
+//             text[i] === "7" ||
+//             text[i] === "8" ||
+//             text[i] === "a" ||
+//             text[i] === "9") {
+
+//             counted = counted + 1;
 //         }
-//         letters = letters + 1
 //     }
-//     return countedLetter;
 
-// };
-// let letter = "s";
-// let word = "success_stories";
-// let result = count(letter, word);
-// console.log(`${letter} is used ${result} times in ${word} word`);
+//     return counted;
+// }
+
+// const result = countDigits("37dhajgsd4bs28eb989bs72hdb1");
+// console.log(`Bu textda ${result} ta raqam qatnashgan`)
+
+
+
+// // /* ✨A-TASK:
+// // Shunday 2 parametrli function tuzing, 
+// // hamda birinchi parametrdagi letterni ikkinchi parametrdagi 
+// // so'zdan qatnashga sonini return qilishi kerak boladi.
+// // MASALAN countLetter("e", "engineer") 3ni return qiladi.
+// // */
+
+// // // ✨ MASALANI YECHIMI:
+// // let letters = 0;
+// // let countedLetter = 0;
+
+// // function count(letter, word) {
+// //     while (letters < word.length) {
+// //         if (word[letters] === letter) {
+// //             countedLetter = countedLetter + 1
+// //         }
+// //         letters = letters + 1
+// //     }
+// //     return countedLetter;
+
+// // };
+// // let letter = "s";
+// // let word = "success_stories";
+// // let result = count(letter, word);
+// // console.log(`${letter} is used ${result} times in ${word} word`);
+
+
+// function countNumbers(str) {
+//     let count = 0;
+
+//     for (let char of str) {
+//         if (char <= '9') {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// let result = countNumbers("ajd2-129efdqfq");
+// console.log("result:", result);
