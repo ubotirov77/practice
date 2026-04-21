@@ -30,3 +30,49 @@ data = c is d
 print("c is d", data)
 print("c is e", c is e)
 print(id(c), id(e))
+
+'''==============================================================================================================
+------------------------------------------------ Conditions ---------------------------------------------------
+================================================================================================================='''
+print("==== Conditions ====")
+
+x = 5
+if x > 50:
+    print("Case A")
+elif x > 10:
+    print("Case B")
+else:
+    print("Case C")
+
+
+print("==== Logical Conditions ====")
+
+age = 21
+# person = None
+
+# if age >= 18:
+#     person = "Teenage"
+# elif age >= 25:
+#     person = "Adult"
+# else:
+#     person = "Child"
+# print("person:", person)
+
+# Ternary
+person = "Adult" if age > 18 else "minor"
+print("person is:", person)
+
+print("-----------------")
+is_student = True
+is_admin = False
+is_guest = True
+is_parent = False
+
+if not is_student:
+    print("Wellcome here do you want to become student!")
+elif is_admin:
+    print("Please go to office")
+elif is_guest or is_parent:
+    print("Waiting room is over there↗️")
+else:
+    print("ETC")
