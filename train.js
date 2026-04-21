@@ -16,8 +16,8 @@ function checkContent(matn1, matn2) {
 
     let result = true;
 
-    for (let i = 0; i < matn1.length; i++) {
-        result = result && matn2.includes(matn1[i]);
+    for (let harf = 0; harf < matn1.length; harf++) {
+        result = result && matn2.includes(matn1[harf]);
     }
 
     return result;
