@@ -1,5 +1,49 @@
 //=============================== MIT TASK with node.js ==============================================
 // /*
+//                                  ✨D-TASK (NodeJS)
+//=====================================================================================================
+// D-TASK (NodeJS)
+
+// Shunday function tuzingki unga integerlardan iborat array pass bolsin va 
+// function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.                                            
+//=====================================================================================================
+// ✨ MASALANI YECHIMI:
+
+function getHighestIndex(arr) {
+    let index = 0;
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > arr[index]) {
+            index = i
+        }
+
+    }
+    return index;
+}
+
+const result = getHighestIndex([-5, 31, 43, 25, 4]);
+console.log("result:", result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /*
 //                                  ✨C-TASK (NodeJS)
 //=====================================================================================================
 // Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string             
@@ -8,23 +52,23 @@
 //=====================================================================================================
 // ✨ MASALANI YECHIMI:
 
-function checkContent(matn1, matn2) {
+// function checkContent(matn1, matn2) {
 
-    if (matn1.length !== matn2.length) {
-        return false;
-    }
+//     if (matn1.length !== matn2.length) {
+//         return false;
+//     }
 
-    let result = true;
+//     let result = true;
 
-    for (let harf = 0; harf < matn1.length; harf++) {
-        result = result && matn2.includes(matn1[harf]);
-    }
+//     for (let harf = 0; harf < matn1.length; harf++) {
+//         result = result && matn2.includes(matn1[harf]);
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
-let result = checkContent("realmadrid", "dirdmalaer");
-console.log("result:", result);
+// let result = checkContent("realmadrid", "dirdmalaer");
+// console.log("result:", result);
 
 
 
