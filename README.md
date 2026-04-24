@@ -26,6 +26,12 @@ git pull origin master
 - Function
 - Objects
 - Class
-- Class deep dive
+- Class deep dive > Encapsulation
+- Class deep dive > Inheritencee Polymorphism,
 - Operation & Conditions
 - Loops
+- Tuple
+- List
+- Array
+- Comprehension
+- Debugging
