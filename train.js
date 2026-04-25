@@ -1,54 +1,63 @@
 //=============================== MIT TASK with node.js ==============================================
-// /*
+/*
+//                                  ✨E-TASK (NodeJS)
+//=====================================================================================================
+// E-TASK (NodeJS)
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib
+// o'sha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+//===================================================================================================== */
+// ✨ MASALANI YECHIMI:
+
+function getReverse(txt) {
+    let reverseLetter = txt.split("").reverse().join("");
+    return reverseLetter;
+}
+
+let result = getReverse("oq balkim qora bo'lib qora oq bo'lib chiqsachi");
+console.log("result :", result,);
+
+
+
+
+
+
+
+
+
+
 //                                  ✨D-TASK (NodeJS)
 //=====================================================================================================
 // D-TASK (NodeJS)
 
-// Shunday function tuzingki unga integerlardan iborat array pass bolsin va 
+// Shunday function tuzingki unga integerlardan iborat array pass bolsin va
 // function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
-// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.                                            
+// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 //=====================================================================================================
 // ✨ MASALANI YECHIMI:
 
-function getHighestIndex(arr) {
-    let index = 0;
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > arr[index]) {
-            index = i
-        }
+// function getHighestIndex(arr) {
+//     let index = 0;
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > arr[index]) {
+//             index = i
+//         }
 
-    }
-    return index;
-}
+//     }
+//     return index;
+// }
 
-const result = getHighestIndex([-5, 31, 43, 25, 4]);
-console.log("result:", result)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const result = getHighestIndex([-5, 31, 43, 25, 4]);
+// console.log("result:", result)
 
 
 // /*
 //                                  ✨C-TASK (NodeJS)
 //=====================================================================================================
-// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string             
-// bir hil harflardan iborat bolsa true aks holda false qaytarsin MASALAN :                                     
-// checkContent("mitgroup", "gmtiprou") return qiladi true;                                             
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string
+// bir hil harflardan iborat bolsa true aks holda false qaytarsin MASALAN :
+// checkContent("mitgroup", "gmtiprou") return qiladi true;
 //=====================================================================================================
 // ✨ MASALANI YECHIMI:
 
