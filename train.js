@@ -2,8 +2,6 @@
 /*
 //                                  ✨E-TASK (NodeJS)
 //=====================================================================================================
-// E-TASK (NodeJS)
-
 // Shunday function tuzing, u bitta string argumentni qabul qilib
 // o'sha stringni teskari qilib return qilsin.
 // MASALAN: getReverse("hello") return qilsin "olleh"
