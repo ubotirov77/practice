@@ -9,13 +9,13 @@ print("===== Pyhton Packages & Core Package ===== ")
 ''' Pyhton Packages/Modules: core , file and External '''
 # core Packages
 
-# # Core
-# t = turtle.Turtle()
-# t.shape("turtle")
-# t.speed(1)
-# t.circle(150)
+# Core
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(1)
+t.circle(150)
 
-# turtle.done()
+turtle.done()
 
 print("-----------")
 my_file = open("material/message.txt", "r")
@@ -40,3 +40,19 @@ with Image.open("material/kittenCoder.png") as img_obj:
     resized_img = img_obj.resize((200, 200))
     resized_img.show()
     resized_img.save("material/sample.png")
+
+
+print("===== Debugging =====")
+
+
+def get_summary(*args):  # define
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount  # solve the bug via debugging
+
+
+test = 100
+# call
+result = get_summary(1, 2, 3, 4, 5)
+print("result", result)
