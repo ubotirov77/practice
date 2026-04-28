@@ -3,7 +3,7 @@
 (2) Package Manager & External Package
 (3) Debugging
 '''
-
+from PIL import Image
 import turtle
 print("===== Pyhton Packages & Core Package ===== ")
 ''' Pyhton Packages/Modules: core , file and External '''
@@ -30,3 +30,13 @@ with open("material/message.txt", "r") as your_file:
     your_content = your_file.read()
     print("your_content:", your_content)
 print("done")
+
+
+print("===== Package Manager & External Package ===== ")
+''' Package Manager: pip pipenv npm yarn composer brew '''
+# External Package > https://pypi.org/
+
+with Image.open("material/kittenCoder.png") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("material/sample.png")
