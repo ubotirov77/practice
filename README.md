@@ -35,3 +35,15 @@ git pull origin master
 - Array
 - Comprehension
 - Debugging
+
+## PIP commands
+```
+  windows pip | macOs pip3
+
+  pip list
+  pip install pillow
+  pip uninstall pillow
+  pip show pillow
+  pip freeze > recuirements.txt
+  
+```   
