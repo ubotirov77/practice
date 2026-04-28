@@ -1,5 +1,47 @@
 //=============================== MIT TASK with node.js ==============================================
 /*
+//                                  ✨F-TASK (NodeJS)
+//=====================================================================================================
+   Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib,
+   agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+   MASALAN: getReverse("hello") return true return qiladi
+//===================================================================================================== */
+// ✨ MASALANI YECHIMI:
+
+function getDuplicate(txt) {
+    let arr = txt.split("").sort();
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === arr[i + 1]) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+const result = getDuplicate("realmadrid");
+console.log("result:", result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //                                  ✨E-TASK (NodeJS)
 //=====================================================================================================
 // Shunday function tuzing, u bitta string argumentni qabul qilib
@@ -8,21 +50,13 @@
 //===================================================================================================== */
 // ✨ MASALANI YECHIMI:
 
-function getReverse(txt) {
-    let reverseLetter = txt.split("").reverse().join("");
-    return reverseLetter;
-}
+// function getReverse(txt) {
+//     let reverseLetter = txt.split("").reverse().join("");
+//     return reverseLetter;
+// }
 
-let result = getReverse("oq balkim qora bo'lib qora oq bo'lib chiqsachi");
-console.log("result :", result,);
-
-
-
-
-
-
-
-
+// let result = getReverse("oq balkim qora bo'lib qora oq bo'lib chiqsachi");
+// console.log("result :", result,);
 
 
 //                                  ✨D-TASK (NodeJS)
