@@ -1,45 +1,54 @@
 //================================= MIT TASK with node.js ==============================================
 /*
-//                                  ✨F-TASK (NodeJS)
+//                                  H-TASK (NodeJS)
 //=====================================================================================================
-   Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib,
-   agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
-   MASALAN: getReverse("hello") return true return qiladi
+    shunday function tuzing, u integerlardan iborat arrayni argument 
+    sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
+    MASALAN: getPositive([1, -4, 2]) return qiladi "12"
+//===================================================================================================== */
+// ✨ MASALANI YECHIMI:
+function getPositive(arr) {
+    let result = []
+    for (let num = 0; num < arr.length; num++) {
+        if (arr[num] > 0) {
+            result.push(arr[num])
+        }
+    }
+    return result.join(",")
+}
+
+console.log(getPositive([1, -4, 39, 0, -2]))
+
+
+
+
+
+
+
+
+
+// //                                  ✨F-TASK (NodeJS)
+// //=====================================================================================================
+//    Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib,
+//    agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+//    MASALAN: getReverse("hello") return true return qiladi
 //===================================================================================================== */
 // ✨ MASALANI YECHIMI:
 
-function getDuplicate(txt) {
-    let arr = txt.split("").sort();
+// function getDuplicate(txt) {
+//     let arr = txt.split("").sort();
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === arr[i + 1]) {
-            return true;
-        }
-    }
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === arr[i + 1]) {
+//             return true;
+//         }
+//     }
 
-    return false;
-}
+//     return false;
+// }
 
-const result = getDuplicate("realmadrid");
-console.log("result:", result);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const result = getDuplicate("realmadrid");
+// console.log("result:", result);
 
 
 //                                  ✨E-TASK (NodeJS)
