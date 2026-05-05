@@ -49,11 +49,11 @@
 
 # atm()
 
-thislist = ["apple", "banana", "cherry"]
+# thislist = ["apple", "banana", "cherry"]
 
-for i, item in enumerate(thislist):
-    arr = []
-    for z, char in enumerate(item):
-        arr.append(char)
+# for i, item in enumerate(thislist):
+#     arr = []
+#     for z, char in enumerate(item):
+#         arr.append(char)
 
-    print(i, item, arr)
+#     print(i, item, arr)

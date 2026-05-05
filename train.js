@@ -17,7 +17,7 @@ function getPositive(arr) {
     return result.join(",")
 }
 
-console.log(getPositive([1, -4, 39, 0, -2]))
+console.log(getPositive([1, -4, 39, 0, -2]));
 
 
 
