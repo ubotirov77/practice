@@ -1,23 +1,78 @@
+/*//================================= MIT TASK with node.js ==============================================
+//
+//                                  J-TASK (NodeJS)
+//=====================================================================================================
+   Shunday function yozing, u parametridagi array ichida eng kop
+   takrorlangan raqamni topib qaytarsin.
+   MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+//===================================================================================================== */
+
+const res = require("express/lib/response");
+
+// ✨ MASALANI YECHIMI:
+function majorityElement(arr) {
+    let result = arr[0];
+    let max = 0;
+
+    for (let num = 0; num < arr.length; num++) {
+        let count = 0;
+
+        for (let number = 0; number < arr.length; number++) {
+            if (arr[num] == arr[number]) {
+                count++;
+            }
+        }
+
+        if (count > max) {
+            max = count;
+            result = arr[num];
+        }
+    }
+
+    return result;
+}
+result = majorityElement([1, 8, 2, 8, 3, 4, 5, 8, 4, 3, 4]);
+console.log("result:", result);
+
+
+
+
+
+
+
+//
+
+
+
+
+
+
+
+
+
+
+
+
 //================================= MIT TASK with node.js ==============================================
 /*
 //                                  H-TASK (NodeJS)
 //=====================================================================================================
-    shunday function tuzing, u integerlardan iborat arrayni argument 
+    shunday function tuzing, u integerlardan iborat arrayni argument
     sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
     MASALAN: getPositive([1, -4, 2]) return qiladi "12"
 //===================================================================================================== */
 // ✨ MASALANI YECHIMI:
-function getPositive(arr) {
-    let result = []
-    for (let num = 0; num < arr.length; num++) {
-        if (arr[num] > 0) {
-            result.push(arr[num])
-        }
-    }
-    return result.join(",")
-}
+// function getPositive(arr) {
+//     let result = []
+//     for (let num = 0; num < arr.length; num++) {
+//         if (arr[num] > 0) {
+//             result.push(arr[num])
+//         }
+//     }
+//     return result.join(",")
+// }
 
-console.log(getPositive([1, -4, 39, 0, -2]));
+// console.log(getPositive([1, -4, 39, 0, -2]));
 
 
 
