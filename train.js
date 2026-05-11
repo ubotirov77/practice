@@ -7,8 +7,6 @@
    MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
 //===================================================================================================== */
 
-const res = require("express/lib/response");
-
 // ✨ MASALANI YECHIMI:
 function majorityElement(arr) {
     let result = arr[0];
@@ -31,7 +29,7 @@ function majorityElement(arr) {
 
     return result;
 }
-result = majorityElement([1, 8, 2, 8, 3, 4, 5, 8, 4, 3, 4]);
+result = majorityElement([1, 2, 3, 4, 5, 4, 3, 4]);
 console.log("result:", result);
 
 

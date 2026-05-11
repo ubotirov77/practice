@@ -1,4 +1,26 @@
 # ==================================== MIT TASK with PYTHON ==============================================
+#                                       ✨k-TASK (PYTHON)
+# ========================================================================================================
+#   Shunday function yozing, u string qabul qilsin
+#   va string ichidagi eng uzun sozni qaytarsin.
+#   MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
+# ========================================================================================================
+# ✨ MASALANI YECHIMI:
+def find_longest(text):
+    words = text.split()
+
+    def get_highest_index(words):
+        return words.index(max(words, key=len))
+
+    index = get_highest_index(words)
+
+    return words[index]
+
+
+print(find_longest("I come from Uzbekistan"))
+
+
+# ==================================== MIT TASK with PYTHON ==============================================
 #                                       ✨I-TASK (PYTHON)
 # ========================================================================================================
 #   Shunday function tuzing, unga string argument pass bolsin.
@@ -6,16 +28,18 @@
 #   MASALAN: get_digits("m14i1t") return qiladi "141"
 # ========================================================================================================
 # ✨ MASALANI YECHIMI:
-def get_digits(arr):
-    result = []
-    for value in arr:
-        if value.isdigit():
-            result.append(value)
-    return ''.join(result)
 
 
-result = get_digits("m010rt84r14l68d6d1")
-print("The digits in the string are:", result)
+# def get_digits(arr):
+#     result = []
+#     for value in arr:
+#         if value.isdigit():
+#             result.append(value)
+#     return ''.join(result)
+
+
+# result = get_digits("m010rt84r14l68d6d1")
+# print("The digits in the string are:", result)
 
 
 # ========================================================================================================
