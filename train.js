@@ -1,5 +1,53 @@
 /*//================================= MIT TASK with node.js ==============================================
 //
+//                                 L-TASK (NodeJS)
+//=====================================================================================================
+    Shunday function yozing, u string qabul qilsin va string ichidagi hamma 
+    sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+    MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
+//===================================================================================================== */
+
+// ✨ MASALANI YECHIMI:
+function reverseSentence(str) {
+    let result = [];
+    let arr = str.split(" ");
+
+    for (let i = 0; i < arr.length; i++) {
+        let reversed = arr[i].split("").reverse().join("");
+        result.push(reversed);
+    }
+
+    return result.join(" ");
+}
+
+console.log(reverseSentence("Norman loves coding!"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//================================= MIT TASK with node.js ==============================================
+//
 //                                  J-TASK (NodeJS)
 //=====================================================================================================
    Shunday function yozing, u parametridagi array ichida eng kop
@@ -8,29 +56,29 @@
 //===================================================================================================== */
 
 // ✨ MASALANI YECHIMI:
-function majorityElement(arr) {
-    let result = arr[0];
-    let max = 0;
+// function majorityElement(arr) {
+//     let result = arr[0];
+//     let max = 0;
 
-    for (let num = 0; num < arr.length; num++) {
-        let count = 0;
+//     for (let num = 0; num < arr.length; num++) {
+//         let count = 0;
 
-        for (let number = 0; number < arr.length; number++) {
-            if (arr[num] == arr[number]) {
-                count++;
-            }
-        }
+//         for (let number = 0; number < arr.length; number++) {
+//             if (arr[num] == arr[number]) {
+//                 count++;
+//             }
+//         }
 
-        if (count > max) {
-            max = count;
-            result = arr[num];
-        }
-    }
+//         if (count > max) {
+//             max = count;
+//             result = arr[num];
+//         }
+//     }
 
-    return result;
-}
-result = majorityElement([1, 2, 3, 4, 5, 4, 3, 4]);
-console.log("result:", result);
+//     return result;
+// }
+// result = majorityElement([1, 2, 3, 4, 5, 4, 3, 4]);
+// console.log("result:", result);
 
 
 
