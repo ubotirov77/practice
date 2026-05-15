@@ -1,4 +1,27 @@
 # ==================================== MIT TASK with PYTHON ==============================================
+#                                       ✨M-TASK (PYTHON)
+# ========================================================================================================
+#   Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham,
+#   orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
+#   MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+# ========================================================================================================
+# ✨ MASALANI YECHIMI:
+
+
+def is_palindrome(text):
+    reversed_text = text[::-1]
+
+    if reversed_text.lower() == text.lower():
+        return True
+    else:
+        return False
+
+
+print(is_palindrome("Madam"))
+print(is_palindrome("Norman"))
+
+
+# ==================================== MIT TASK with PYTHON ==============================================
 #                                       ✨k-TASK (PYTHON)
 # ========================================================================================================
 #   Shunday function yozing, u string qabul qilsin
@@ -6,18 +29,18 @@
 #   MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
 # ========================================================================================================
 # ✨ MASALANI YECHIMI:
-def find_longest(text):
-    words = text.split()
+# def find_longest(text):
+#     words = text.split()
 
-    def get_highest_index(words):
-        return words.index(max(words, key=len))
+#     def get_highest_index(words):
+#         return words.index(max(words, key=len))
 
-    index = get_highest_index(words)
+#     index = get_highest_index(words)
 
-    return words[index]
+#     return words[index]
 
 
-print(find_longest("I come from Uzbekistan"))
+# print(find_longest("I come from Uzbekistan"))
 
 
 # ==================================== MIT TASK with PYTHON ==============================================
