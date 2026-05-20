@@ -1,4 +1,27 @@
 # ==================================== MIT TASK with PYTHON ==============================================
+#                                       ✨O-TASK (PYTHON)
+# ========================================================================================================
+#  Shunday function yozing, u har xil valuelardan iborat
+#  array qabul qilsin va List ichidagi sonlar
+#  yigindisini hisoblab chiqqan javobni qaytarsin.
+#  MASALAN: calculate_summary([10, "10", {son: 10}, true, 35]) return 45
+# ========================================================================================================
+# ✨ MASALANI YECHIMI:
+
+def calculate_summary(arr):
+    total = 0
+
+    for item in arr:
+        if type(item) == int:
+            total += item
+
+    return total
+
+
+result = calculate_summary([34, "10", {"son": 10}, True, 100])
+print("result:", result)
+
+# ==================================== MIT TASK with PYTHON ==============================================
 #                                       ✨M-TASK (PYTHON)
 # ========================================================================================================
 #   Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham,
@@ -8,17 +31,17 @@
 # ✨ MASALANI YECHIMI:
 
 
-def is_palindrome(text):
-    reversed_text = text[::-1]
+# def is_palindrome(text):
+#     reversed_text = text[::-1]
 
-    if reversed_text.lower() == text.lower():
-        return True
-    else:
-        return False
+#     if reversed_text.lower() == text.lower():
+#         return True
+#     else:
+#         return False
 
 
-print(is_palindrome("Madam"))
-print(is_palindrome("Norman"))
+# print(is_palindrome("Madam"))
+# print(is_palindrome("Norman"))
 
 
 # ==================================== MIT TASK with PYTHON ==============================================
